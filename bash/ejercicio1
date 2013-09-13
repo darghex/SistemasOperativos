@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VAR1='MUNDO'
+VAR2="HOLA $VAR1"
+VAR3=3
+VAR4=`uname -r`
+echo  $VAR4
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+#!/bin/bash
+# Uso de estructuras condicionales
+
+echo -n "Digite su edad: "
+read EDAD
+
+if [ $EDAD -ge 18 ]; then
+	echo 'Puede salir por la noche'
+else
+	echo 'lo siento, tiene que pedir permiso'
+fi
+
+

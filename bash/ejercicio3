@@ -1,0 +1,9 @@
+#!/bin/bash
+# Estructura repetitiva while
+
+NUM=0
+
+while [ $NUM -lt 100 ]; do
+	NUM=$[ $NUM + 2 ]
+	echo $NUM
+done
