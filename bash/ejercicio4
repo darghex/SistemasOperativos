@@ -1,0 +1,11 @@
+#!/bin/bash
+## estructura repetitiva for in
+
+lista=`ls`
+num=0
+for elemento in $lista; do
+	echo "$num. $elemento"
+	num=$[ num + 1 ]
+done
+echo "En total hay $num elementos"
+
