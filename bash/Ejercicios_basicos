@@ -1,0 +1,14 @@
+Ejercicios a realizar:
+
+1. Capturando una ruta indicar este es un archivo o directorio
+2. Mostrar el tamaño en MB de los elementos de un directorio, asi como la sumatoria total. (pista: comando du)
+3. Indicar cuantos archivos ocultos, cuantos ficheros ordinarios y cuantos subdirectorios tiene un directorio
+4. Indicar si un número es par o impar
+5. Hacer un script que realize copias de seguridad del directorio personal de un usuario. 
+6. Apagar el sistema despues de un tiempo indicado. (usuario root, comando shutdown)
+7. Contar cuantas vocales y cuantas consonantes tiene una palabra (cut)
+8. Mostrar la direccion IP de una interfaz (pista: uso de ifconfig + grep + cut)
+9. Crear un fichero con un tamaño variable indicado por el usuario (pista: uso del comando dd)
+10. Capturar el nombre de un fichero y verificar los permisos que este posee (lectura, escritura, ejecución) asi como tambien su propietario y grupo dueño
+11. Usando el archivo /etc/passwd escribir un script que lista los nombres de usuario y su directorio personal  ordenados alfabéticamente por nombre de usuario.
+
