@@ -11,4 +11,8 @@ Ejercicios a realizar:
 9. Crear un fichero con un tamaño variable indicado por el usuario (pista: uso del comando dd)
 10. Capturar el nombre de un fichero y verificar los permisos que este posee (lectura, escritura, ejecución) asi como tambien su propietario y grupo dueño
 11. Usando el archivo /etc/passwd escribir un script que lista los nombres de usuario y su directorio personal  ordenados alfabéticamente por nombre de usuario.
+12. Script que al pulsar una tecla indique, si es letra, numero o caracter especial
+13. MOstrar informacion del usuario logueado actualmente tal como nombre, username, uid, directorio personal. grupos
+14. Dividir un archivo en varias partes iguales ( split )
+15. Unir los partes del archivo en uno solo
 
