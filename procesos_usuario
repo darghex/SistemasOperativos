@@ -1,0 +1,10 @@
+#!/bin/bash
+
+USUARIOS=`cat /etc/passwd | cut -d ':' -f 1`
+
+for USUARIO in $USUARIOS;do 
+	PROCESOS=`ps  -U $USUARIO  | wc -l`
+	CARGA=`ps  -eo %mem,%cpu,user  | grep $USUARIO | awk '{ m += $1; p += $2 } END { print "Consumo de RAM "  m " %" ,  "Consumo de CPU " p " %"}'`
+	echo " Usuario : $USUARIO Cantidad Procesos: $PROCESOS $CARGA"
+
+done
