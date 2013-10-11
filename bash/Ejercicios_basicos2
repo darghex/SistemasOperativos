@@ -1,0 +1,20 @@
+
+
+1. Listar el contenido de  un directorio enviado por parametro  y mostrar los tamaños de archivo en unidades amigables (KB, MB, GB).  el escript se debe ejecutar ejecutar ./listado_de_archivos /home/darghex
+2. Determinar el PID (Process ID) del algun proceso que se este ejecutando 
+3. Buscar dentro del directorio $HOME los archivos que hayan sido modificados el día de ayer.
+4.  Buscar dentro del directorio /var/log los archivos que hayan sido modificados entre ayer y anteayer.
+5. Mostrar los puntos de montaje de los dispositivos de almacenamiento, asi como su sistema de archivos
+6. Indicar el espacio libre de cada una de las particiones del sistema
+7. Determinar que proceso esta consumiendo mas CPU
+8. Determinar que proceso esta consumiendo mas RAM
+9. Determinar cuanta RAM y SWAP esta siendo usada en el sistema
+10.  hacer un enlace simbolico de todos los programas del directorio actual (archivos ejecutables) hacia el subdirectorio bin del directorio propio del usuario, muestre los nombres de los archivos ejecutable e indique cuántos ha enlazado o que no ha enlazado ninguno. Si el directorio bin no existe, deberá ser creado.
+11. según la hora, escriba el saludo correspondiente al nombre del usuario logueado. Los saludos corresponden a las siguientes horas: Buenos días, de 05:00 hasta 12:59 y se abrira algun programa por ejemplo "nano"; Buenas tardes, de 13:00 hasta 19:59; Buenas noches 20:00 hasta 04:59. En esta ultima hora se forzara al cierre de session del usuario. A efectos de pruebas, se recibirán la hora y el nombre de login como parámetros, dejando comentados los comandos donde se extrae la hora real y se toma el usuario real.
+12. . Implementar una versión “visual” de du (duv) que muestre una barra indicando el tamaño relativo de cada ﬁchero en un directorio dado como parámetro. Por ejemplo, si hay dos ﬁcheros en el directorio actual, uno de 100 bytes y otro de 200 bytes, la ejecución duv . mostraría:
+$ duv .
+fichero1 *********************** 33%
+fichero2 ********************************************** 66%
+13. Mostrar la cantidad de procesos que esta ejecutando cada usuario en el sistema asi como tambien su consumo total en el procesador y en RAM.
+14.  Hacer un script que borre virus en una memoria USB. La memoria  debe estar montada para hacer este proceso. Primero debe mostrarse un escaneo sobre el dispositivo y mostrar los archivos encontrados. Posteriormente borrar cada archivo infectado. Los archivos de virus siguen el patrón: autorun.inf, *.lnk , *.com, recycler, .bat
+15. Realizar un script que monitoreando los logs del sistema (/var/log/syslog) me indique información de cuando se conecto y desconecto un dispositivo USB con su respectiva hora y fecha. Se Debera enviar un correo al usuario root con esta información para realizar auditoria
