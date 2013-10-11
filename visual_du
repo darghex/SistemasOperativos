@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ -d $1 ]; then
+# Captura el tamaño total del directorio en KB
+SIZE_FOLDER=`du -d 0 -k $1 2> /dev/null | awk '{print $1}'`
+#Obtener la lista de los ficheros y subdirectorios de primer nivel
+LIST=`du -d 1 -k $1 2> /dev/null`
+# Bandera para indicar si es el tamaño o ruta de archivo
+PORC=0
+FLAG=1
+for ELEMENT in $LIST;do 
+	if [ $FLAG == 1 ]; then		
+		PORC=`echo "scale=5; ($ELEMENT / $SIZE_FOLDER * 100) " | bc` 
+		FLAG=0		
+	else
+		echo "$ELEMENT $PORC %"
+		FLAG=1
+	fi	
+done
+
+
+else
+	echo "El argumento no es un directorio"
+fi  
