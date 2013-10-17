@@ -32,7 +32,7 @@ ejempli de salida propietario [darghex]  = lectura, escritura; grupo [administra
 11. Usando el archivo /etc/passwd escribir un script que lista los nombres de usuario, su directorio personal  y su UID
 ordenados alfabéticamente por nombre de usuario.
 
-13. MOstrar informacion del usuario logueado actualmente tal como nombre, username, uid, directorio personal y grupos:
+12. MOstrar informacion del usuario logueado actualmente tal como nombre, username, uid, directorio personal y grupos:
 debe arrojar una salida similar:
 USER NAME : darghex
 NAME : JHON DARWIN MUÑOZ LOPEZ
@@ -40,7 +40,34 @@ UID : 1001,
 PATH : /home/darghex
 GROUPS: administrador, root
 
-14. Dividir un archivo en varias partes iguales ( split ). La cantidad de partes las debe indicar el usuario
+13. Dividir un archivo en varias partes iguales ( split ). La cantidad de partes las debe indicar el usuario
+
+14. Determinar el PID (Process ID) del algun proceso que se este ejecutando.
+El nombre del proceso se debe solicitar por teclado ( ps, grep)
+
+15. Mostrar los puntos de montaje y su respectivo dispositivos de almacenamiento (mount)
+
+16.  Determinar que proceso esta consumiendo mas y menos CPU (ps)
+
+17.  Determinar que proceso esta consumiendo mas y menos RAM (ps)
+
+18.  Hacer un script que borre virus en una memoria USB. 
+La memoria  debe estar montada para hacer este proceso. Se debe borrar cada archivo infectado e 
+indicar la cantidad de archivos infectados borrados. 
+Los archivos de virus siguen el patrón: autorun.inf, *.lnk , *.com, recycler, .bat (find)
+
+19. Hacer un enlace simbolico de todos los programas del directorio actual (archivos ejecutables),
+el directorio actual es donde se encuentre ejecutando el archivo, los archivos encontrados
+se deberan almacenar en el subdirectorio bin del directorio donde se este ejecutando, 
+Si el directorio bin no existe, deberá ser creado. (ln -s )
+
+20. Indicar el espacio usado y libre de cada una de las particiones del sistema (df)
+
+
+
+
+
+
 
 
 
