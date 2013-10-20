@@ -1,0 +1,16 @@
+#!/bin/bash
+## Pruebas de rendimiento sobre sistemas de archivos EXT2
+
+# creamos archivo en bruto que representara una partición virtual
+# crearemos una particion apartir de un archivo a manera de estudio
+# pero tambien puede aplicacar sobre particiones nativas
+# creamos con el mandato dd una particion con datos nulos de 100000 bloques (1 bloque = 512 Bytes)
+dd if=/dev/zero of=ext2.fs count=100000
+# formatear el archivo creado
+mkfs.ext2 ext2.fs
+#crear carpeta de montaje
+mkdir particion_ext2
+# Mapear el archivo a loop, ext2.fs queda referenciado por /dev/loop0
+losetup /dev/loop0 ext2.fs
+# montamos el archivo al directorio creado con anterioridad
+mount -t ext2 /dev/loop0 particion_ext2
